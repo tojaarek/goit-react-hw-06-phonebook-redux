@@ -8,8 +8,7 @@
 .item {
   font-size: 16px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
   margin-bottom: 10px;
 }
 
@@ -21,6 +20,7 @@
   background: none;
   border-radius: 6px;
   cursor: pointer;
+  margin-left: 15px;
 }
 
 .button:hover,
@@ -33,4 +33,15 @@
   font-size: 16px;
   margin-bottom: 10px;
   text-align: center;
+}
+
+.checkbox {
+  margin-right: 15px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }

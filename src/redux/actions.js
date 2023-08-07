@@ -18,7 +18,16 @@ export const deleteContact = id => {
   };
 };
 
-export const findContact = filter => ({
-  type: 'contacts/FILTER',
-  payload: filter,
-});
+export const toggleFavorite = id => {
+  return {
+    type: 'contacts/FAVORITE',
+    payload: id,
+  };
+};
+
+export const setStatusFilter = status => {
+  return {
+    type: 'filters/SET',
+    payload: status,
+  };
+};
