@@ -20,8 +20,6 @@ const ContactList = ({ filter }) => {
   const filteredContacts = filterContacts.filter(contact =>
     contact.name.toLowerCase().includes(filter.toLowerCase())
   );
-  const initialContacts = [];
-  localStorage.setItem('contacts', JSON.stringify(initialContacts));
   if (!contacts || contacts.length === 0) {
     return (
       <ul className={results.list}>
