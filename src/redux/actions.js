@@ -7,6 +7,7 @@ export const addContact = (name, number) => {
       id: nanoid(),
       name,
       number,
+      favorite: false,
     },
   };
 };

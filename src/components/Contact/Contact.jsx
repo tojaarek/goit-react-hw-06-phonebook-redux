@@ -29,7 +29,7 @@ const Contact = ({ contact }) => {
 
 Contact.propTypes = {
   contact: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     number: PropTypes.string.isRequired,
     favorite: PropTypes.bool.isRequired,

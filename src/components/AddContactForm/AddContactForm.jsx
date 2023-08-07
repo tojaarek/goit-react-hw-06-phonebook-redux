@@ -1,14 +1,13 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/actions';
 import { getContacts } from 'redux/selectors';
+import { addContact } from 'redux/actions';
 import form from './AddContactForm.module.css';
 
 const AddContactForm = () => {
   const dispatch = useDispatch();
-  const contacts = useSelector(getContacts);
   const [contact, setContacts] = useState([]);
-
+  const contacts = useSelector(getContacts);
   const handleSubmit = event => {
     event.preventDefault();
     const form = event.target;
