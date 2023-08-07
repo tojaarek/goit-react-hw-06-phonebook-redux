@@ -6,7 +6,7 @@ if (!parsedContactsInStorage) {
   localStorage.setItem('contacts', JSON.stringify([]));
 }
 
-const contactsInitial = parsedContactsInStorage || [];
+const contactsInitial = parsedContactsInStorage;
 
 const contactsReducer = (state = contactsInitial, action) => {
   switch (action.type) {
