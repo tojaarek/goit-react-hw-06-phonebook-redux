@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
-
+const initialContacts = [];
+localStorage.setItem('contacts', JSON.stringify(initialContacts));
 const contactsInStorage = localStorage.getItem('contacts');
 const parsedContactsInStorage = JSON.parse(contactsInStorage);
+console.log(parsedContactsInStorage);
 
 const contactsInitial = parsedContactsInStorage;
 
